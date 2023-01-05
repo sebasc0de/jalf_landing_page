@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .container {
   position: fixed;
   height: 100vh;
@@ -10,6 +12,7 @@
   }
 
   i {
+    background: $accent-2;
     z-index: 99;
     color: black;
     position: absolute;
