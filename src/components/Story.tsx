@@ -18,7 +18,6 @@ export const Story = ({ video }: { video: string }) => {
           onEnded={closeHandler}
           src={video}
           autoPlay
-          muted
           controls
           preload="auto"
         />
