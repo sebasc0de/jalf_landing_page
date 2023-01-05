@@ -34,7 +34,7 @@ const CloseButton = () => {
   const { hideComponent } = useContext(UIContext);
 
   const closeHandler = () => {
-    hideComponent;
+    hideComponent();
     document.body.style.overflow = "scroll";
   };
 
