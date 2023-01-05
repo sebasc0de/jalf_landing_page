@@ -7,6 +7,7 @@ export const Navigation = ({ data }: { data: Props[] }) => {
       {data.map((item, i) => (
         <a
           style={{ color: "black" }}
+          rel="noreferrer"
           key={item.id}
           target="_blank"
           href={item.url}
