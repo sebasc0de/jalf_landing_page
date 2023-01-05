@@ -22,7 +22,6 @@ export const Story = ({ video }: { video: string }) => {
           controls
           preload="auto"
         />
-        <i onClick={closeHandler} className="bx bx-x"></i>
       </div>
     </Portal>
   );
