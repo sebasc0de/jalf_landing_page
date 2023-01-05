@@ -4,11 +4,11 @@ import config from "../config/backend";
 
 class AuthRepository<T> implements Repository<T> {
   async registerWithEmailAndPassword(data: RegisterProps): Promise<T> {
-    return await axios.post(config.REGISTER_URL, data);
+    return await axios.post(config.AUTH.REGISTER_URL, data);
   }
 
   async loginWithEmailAndPassword(data: LoginProps): Promise<any> {
-    return await axios.post(config.LOGIN_URL, data);
+    return await axios.post(config.AUTH.LOGIN_URL, data);
   }
 }
 
