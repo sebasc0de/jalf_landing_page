@@ -6,17 +6,22 @@ import Portal from "./Portal";
 export const Story = ({ video }: { video: string }) => {
   const { hideComponent } = useContext(UIContext);
 
+  const closeHandler = () => {
+    document.body.style.overflow = "scroll";
+    hideComponent();
+  };
+
   return (
     <Portal>
       <div className={styles.container}>
         <video
-          onEnded={hideComponent}
+          onEnded={closeHandler}
           src={video}
           autoPlay
           muted
           preload="auto"
         />
-        <i onClick={hideComponent} className="bx bx-x"></i>
+        <i onClick={closeHandler} className="bx bx-x"></i>
       </div>
     </Portal>
   );

@@ -49,12 +49,17 @@ const DesktopButtons = () => {
 const MobileButtons = () => {
   const { showComponent } = useContext(UIContext);
 
+  const menuHandler = () => {
+    document.body.style.overflow = "hidden";
+    showComponent("full-screen-navigation");
+  };
+
   return (
     <div className={styles.MobileButtons}>
       <Link href="/login">
         <i className="bx bx-user"></i>
       </Link>
-      <button onClick={() => showComponent("full-screen-navigation")}>
+      <button onClick={menuHandler}>
         <i className="bx bx-menu"></i>
       </button>
     </div>
