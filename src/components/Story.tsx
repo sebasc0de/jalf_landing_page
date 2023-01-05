@@ -14,7 +14,14 @@ export const Story = ({ video }: { video: string }) => {
   return (
     <Portal>
       <div className={styles.container}>
-        <video onEnded={closeHandler} src={video} controls preload="auto" />
+        <video
+          onEnded={closeHandler}
+          src={video}
+          autoPlay
+          muted
+          controls
+          preload="auto"
+        />
         <i onClick={closeHandler} className="bx bx-x"></i>
       </div>
     </Portal>
