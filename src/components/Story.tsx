@@ -9,7 +9,13 @@ export const Story = ({ video }: { video: string }) => {
   return (
     <Portal>
       <div className={styles.container}>
-        <video onEnded={hideComponent} src={video} autoPlay preload="auto" />
+        <video
+          onEnded={hideComponent}
+          src={video}
+          autoPlay
+          muted
+          preload="auto"
+        />
         <i onClick={hideComponent} className="bx bx-x"></i>
       </div>
     </Portal>
