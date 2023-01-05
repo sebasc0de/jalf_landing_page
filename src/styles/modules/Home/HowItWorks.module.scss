@@ -1,0 +1,83 @@
+@import "../../variables";
+.container {
+  padding: 20% 5%;
+  background: $primary;
+  min-height: 100vh;
+  position: relative;
+  span {
+    color: white;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  font-size: 1.5rem;
+  gap: 1rem;
+  margin-bottom: 5%;
+}
+
+.stepCard {
+  border-radius: 5px;
+  padding: 2.5rem;
+  background: white;
+  min-height: 500px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  footer {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    .story {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid $accent-2;
+      padding: 3px;
+      border-radius: 50%;
+      img {
+        object-position: top;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .stepTitle {
+      font-weight: 700;
+      font-size: 1.125rem;
+    }
+
+    .stepDesc {
+      font-size: 0.9rem;
+      color: rgb(75, 75, 75);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 2.5%;
+  }
+
+  .wrapper {
+    margin-top: 3.5%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .stepCard {
+    font-size: 2rem;
+  }
+}

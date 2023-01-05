@@ -1,0 +1,156 @@
+// Rounded
+.rounded-full {
+  border-radius: 30px;
+}
+
+// Top
+
+.top-0 {
+  top: 0;
+}
+
+.top-75 {
+  top: 75px;
+}
+
+// Positions
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+// Flex ##########################################
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.gap-1 {
+  gap: 1.5rem;
+}
+
+// Width
+.w-10 {
+  width: 10%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+// Margin
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+// Padding
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 2.5rem;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+.p-6 {
+  padding: 3.5rem;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-2 {
+  padding: 0 1.5rem;
+}
+
+.px-3 {
+  padding: 0 2rem;
+}
+
+// Text custom styles ###############################
+.enphasis {
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.soft {
+  color: gray;
+}
+
+@media screen and (max-width: 640px) {
+  .sm-hidden {
+    display: none;
+  }
+}

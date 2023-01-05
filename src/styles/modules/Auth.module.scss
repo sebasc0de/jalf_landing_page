@@ -1,0 +1,79 @@
+@import "../variables";
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: rgb(236, 236, 236);
+
+  .wrapper {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px 1px rgba(black, 0.0525);
+    border: 1px solid rgba(black, 0.1);
+    background: rgb(241, 241, 241);
+    padding: 2rem 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.225rem;
+    // Login buttons
+    .loginButton {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      border-radius: 10px;
+      max-width: 300px;
+      min-width: 300px;
+
+      i {
+        font-size: 1.4rem;
+      }
+    }
+
+    // The login form
+    form {
+      max-width: 300px;
+      min-width: 300px;
+      input {
+        &:focus {
+          outline-width: 1px;
+          outline-color: $primary;
+        }
+      }
+
+      label {
+        color: gray;
+        margin: 0.625rem 0;
+        display: block;
+      }
+      button {
+        background-color: $primary;
+        border-radius: 10px;
+        margin: 1rem 0;
+        width: 100%;
+      }
+    }
+    // Recover password
+    small {
+      color: $accent;
+      font-weight: 500;
+      font-size: 0.795rem;
+      color: black;
+      a {
+        margin-left: 0.325rem;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    .wrapper {
+      width: 30%;
+    }
+  }
+}

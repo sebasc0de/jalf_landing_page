@@ -1,0 +1,192 @@
+@import "../../_variables.scss";
+
+.container {
+  min-height: 100vh;
+  background: #fbfbfb;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu {
+  width: 100%;
+  p {
+    margin-top: 0.7rem;
+    color: gray;
+  }
+  input {
+    &:focus {
+      outline-width: 1px;
+      outline-color: $primary;
+    }
+  }
+}
+
+.form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.425rem;
+
+  label {
+    font-weight: 500;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+  }
+
+  button {
+    border-radius: 10px;
+  }
+
+  span {
+    text-align: center;
+    width: 100%;
+    color: $accent;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+}
+
+// Chat card
+.card {
+  background-image: url("../../../../public/images/whatsapp_pattern.jpeg");
+  background-size: contain;
+  border-radius: 10px;
+  min-height: 600px;
+  max-height: 600px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .header {
+    background: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+      font-weight: 500;
+    }
+
+    small {
+      display: block;
+      color: gray;
+    }
+  }
+
+  .chat {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 500px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .question {
+      background-color: #d7fed4;
+      padding: 0.5rem;
+      border-radius: 10px;
+      width: fit-content;
+    }
+
+    .response {
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 10px;
+      width: fit-content;
+    }
+  }
+
+  .chatbar {
+    position: relative;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    justify-content: space-around;
+    i {
+      color: gray;
+      font-size: 1.5rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    input {
+      border: none;
+      width: 80%;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+  }
+
+  .chatSuggestions {
+    background: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    overflow-y: scroll;
+    height: 200px;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    li {
+      padding: 1rem;
+      font-weight: 600;
+      &:hover {
+        background: rgb(226, 226, 226);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    gap: 10%;
+  }
+
+  .menu {
+    text-align: left;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .form {
+    align-items: flex-start;
+    margin-top: 15%;
+
+    label {
+      font-size: 0.925rem;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    select {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}

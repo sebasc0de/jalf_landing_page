@@ -1,0 +1,70 @@
+@import "../../variables";
+.topbar {
+  background: $accent-2;
+  display: flex;
+  text-align: center;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(34, 34, 34);
+  button {
+    padding: 0;
+    background: none;
+    color: inherit;
+  }
+}
+
+.header {
+  width: 100%;
+  z-index: 1;
+  background: white;
+  position: sticky;
+  top: 0;
+  .wrapper {
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.menu {
+  display: none;
+}
+
+.MobileButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  i {
+    color: black;
+    font-size: 1.2rem;
+  }
+  button {
+    background: none;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+  .MobileButtons {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}

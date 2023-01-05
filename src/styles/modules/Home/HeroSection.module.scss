@@ -1,0 +1,39 @@
+@import "../../variables";
+@import "../../mixins";
+
+.heroSection {
+  padding: 10% 5%;
+  background: white;
+}
+
+.title {
+  text-align: center;
+
+  h2 {
+    font-weight: 600;
+  }
+
+  button {
+    background-color: $accent-2;
+    color: black;
+    border-radius: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+
+  span {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heroSection {
+    width: 60%;
+    margin: auto;
+    padding: 10%;
+  }
+}
