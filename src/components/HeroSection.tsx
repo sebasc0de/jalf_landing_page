@@ -9,7 +9,7 @@ export const HeroSection = () => {
       <div className={styles.title}>
         <h2>Productos para profesionales de estética</h2>
         <button onClick={onClickHandler}>Lista de precios</button>
-        <span>👄 Estética, masajes, cosmetología…</span>
+        <span>👄 Masajes, Estética, cosmetología…</span>
       </div>
     </section>
   );
