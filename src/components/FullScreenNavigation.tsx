@@ -33,8 +33,13 @@ export const FullScreenNavigation = () => {
 const CloseButton = () => {
   const { hideComponent } = useContext(UIContext);
 
+  const closeHandler = () => {
+    hideComponent;
+    document.body.style.overflow = "scroll";
+  };
+
   return (
-    <button onClick={hideComponent} className={styles.closeButton}>
+    <button onClick={closeHandler} className={styles.closeButton}>
       <i className="bx bx-x"></i>
     </button>
   );

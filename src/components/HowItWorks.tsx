@@ -31,6 +31,7 @@ const StepCard = ({ Step, setVideoUrl }: StepCardProps) => {
   const { showComponent } = useContext(UIContext);
 
   const StoryHandler = () => {
+    document.body.style.overflow = "hidden";
     setVideoUrl(Step.videoUrl);
     showComponent("story");
   };
