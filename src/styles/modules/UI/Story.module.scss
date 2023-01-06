@@ -9,10 +9,11 @@
 
   video {
     height: 100%;
+    transform: scale(102%);
   }
 
   .controllers {
-    z-index: 99;
+    z-index: 12;
     width: 100%;
     position: absolute;
     justify-content: space-between;
@@ -22,6 +23,7 @@
     gap: 0.425rem;
     padding: 2.5%;
     i {
+      z-index: 20;
       color: white;
       font-size: 1.5rem;
       &:hover {
@@ -32,6 +34,7 @@
 }
 
 .overlay {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 0;
@@ -42,10 +45,12 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 1rem;
+    border-radius: 15px;
+    overflow: hidden;
+    left: 5px;
 
     video {
-      border-radius: 15px;
+      transform: scale(101%);
     }
 
     i {
