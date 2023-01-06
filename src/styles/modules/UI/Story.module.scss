@@ -4,7 +4,7 @@
   position: fixed;
   height: 100vh;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 25;
 
   video {
@@ -23,7 +23,7 @@
     padding: 2.5%;
     i {
       color: white;
-      font-size: 1rem;
+      font-size: 1.5rem;
       &:hover {
         cursor: pointer;
       }
