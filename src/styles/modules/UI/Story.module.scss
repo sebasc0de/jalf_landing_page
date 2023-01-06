@@ -4,12 +4,13 @@
   position: fixed;
   height: 100vh;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 25;
 
   video {
     height: 100%;
-    transform: scale(102%);
+    width: 100%;
+    transform: scale(130%) translateX(-10px);
   }
 
   .controllers {
@@ -47,10 +48,9 @@
   .container {
     border-radius: 15px;
     overflow: hidden;
-    left: 5px;
 
     video {
-      transform: scale(101%);
+      transform: scale(101%) translateX(none);
     }
 
     i {
