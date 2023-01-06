@@ -14,15 +14,15 @@ export const HowItWorks = () => {
   return (
     <section className={styles.container}>
       {UI === "story" && <Story video={videoUrl} />}
+      <span>
+        Puedes pulsar la foto de cada paso para ver el video explicativo. 🤓
+      </span>
 
       <div className={styles.wrapper}>
         {data.map((item) => (
           <StepCard Step={item} setVideoUrl={setVideoUrl} key={item.id} />
         ))}
       </div>
-      <span>
-        Puedes pulsar la foto de cada paso para ver el video explicativo. 🤓
-      </span>
     </section>
   );
 };

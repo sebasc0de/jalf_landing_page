@@ -1,6 +1,6 @@
 @import "../../variables";
 .container {
-  padding: 20% 5%;
+  padding: 10% 5%;
   background: $primary;
   min-height: 100vh;
   position: relative;
@@ -19,7 +19,7 @@
   display: grid;
   font-size: 1.5rem;
   gap: 1rem;
-  margin-bottom: 5%;
+  margin-top: 10%;
 }
 
 .stepCard {
