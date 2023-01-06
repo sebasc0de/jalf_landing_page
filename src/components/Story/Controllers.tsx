@@ -12,7 +12,7 @@ export const Controllers = ({
   const { hideComponent } = useContext(UIContext);
 
   const closeHandler = () => {
-    document.body.style.overflow = "scroll";
+    document.body.style.overflow = "auto";
     hideComponent();
   };
 
