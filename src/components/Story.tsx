@@ -1,31 +1,34 @@
-import { useContext, useRef } from "react";
+import { Controllers } from "./Story/Controllers";
 import { UIContext } from "../context/UI";
-import styles from "../styles/modules/UI/Story.module.scss";
+import { useContext, useRef } from "react";
 import Portal from "./Portal";
+import styles from "../styles/modules/UI/Story.module.scss";
 
 export const Story = ({ video }: { video: string }) => {
-  const { hideComponent } = useContext(UIContext);
+  // Function to hide components
+  const hideComponent = useContext(UIContext).hideComponent;
 
+  // Video reference
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const playHandler = () => videoRef.current && videoRef.current.play();
-
-  const closeHandler = () => {
+  const onEndedHandler = () => {
     document.body.style.overflow = "scroll";
     hideComponent();
   };
 
   return (
     <Portal>
-      <div onTouchStart={playHandler} className={styles.container}>
+      <div className={styles.container}>
+        <div className={styles.overlay}></div>
         <video
+          onEnded={onEndedHandler}
           ref={videoRef}
-          onEnded={closeHandler}
           autoPlay
+          muted
           src={video}
           preload="auto"
         />
-        <i onClick={closeHandler} id="close" className="bx bx-x"></i>
+        <Controllers videoRef={videoRef} />
       </div>
     </Portal>
   );
