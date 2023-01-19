@@ -11,7 +11,7 @@ const Portal = ({ children }: { children: ReactNode }) => {
   }, []);
 
   return mounted
-    ? createPortal(children, document.querySelector("#myportal") as any)
+    ? createPortal(children, document.querySelector("#myportal") as HTMLElement)
     : null;
 };
 

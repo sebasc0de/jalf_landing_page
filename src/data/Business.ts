@@ -4,7 +4,7 @@ import { v4 as uuid } from "uuid";
 
 // Price list
 export const PriceList =
-  "https://www.dropbox.com/s/xnag9ppzg8vrgho/LISTA%20ENERO%20Profesionales.pdf?dl=0";
+  "https://www.dropbox.com/s/slflhbemat9wue1/LISTA%20ENERO%20Profesionales.pdf?dl=0";
 
 // Whatsapp
 export const WhatsAppLink =
