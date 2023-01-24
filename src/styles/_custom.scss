@@ -205,3 +205,19 @@ span.rounded.green {
     cursor: pointer;
   }
 }
+
+// Error
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  min-height: 80vh;
+  gap: 1rem;
+
+  button {
+    background: $accent-2;
+    color: black;
+  }
+}

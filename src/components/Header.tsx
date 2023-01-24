@@ -36,10 +36,10 @@ const Menu = () => {
 const DesktopButtons = () => {
   return (
     <div className="flex gap-1 items-center sm-hidden">
-      <Link href="login">
+      <Link href="404">
         <small className="enphasis">Iniciar sesión</small>
       </Link>
-      <Link href="register">
+      <Link href="404">
         <button className="rounded-full secondary">Registrarme</button>
       </Link>
     </div>
