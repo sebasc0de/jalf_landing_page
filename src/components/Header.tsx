@@ -56,7 +56,7 @@ const MobileButtons = () => {
 
   return (
     <div className={styles.MobileButtons}>
-      <Link href="/login">
+      <Link href="/404">
         <i className="bx bx-user"></i>
       </Link>
       <button onClick={menuHandler}>
