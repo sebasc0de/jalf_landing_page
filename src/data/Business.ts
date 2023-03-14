@@ -4,7 +4,7 @@ import { v4 as uuid } from "uuid";
 
 // Price list
 export const PriceList =
-  "https://www.dropbox.com/s/1207xb9i5yiyoe2/LISTA%20FEB%20Profesionales.pdf?dl=0";
+  "https://www.dropbox.com/s/jdpa7ydvj030gvg/LISTA%20MAR23%20Profesionales.pdf?dl=0";
 
 // Whatsapp
 export const WhatsAppLink =
